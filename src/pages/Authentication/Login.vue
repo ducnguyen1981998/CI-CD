@@ -144,6 +144,7 @@ export default {
   bodyClass: "login-page",
   data() {
     return {
+      message: "hello",
       username: "",
       password: "",
       submitted: false,
