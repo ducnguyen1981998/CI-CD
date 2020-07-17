@@ -18,6 +18,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import veeValidate from "vee-validate";
 import App from "./App";
+import firebase from "firebase";
 
 // router setup
 import { router } from "./routes/routes";
@@ -39,6 +40,21 @@ import store from "./store";
 //   routes, // short for routes: routes
 //   linkExactActiveClass: "nav-item active"
 // });
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyBonGH2RrrESFY5acs9jhJOELzV7-AMG08",
+  authDomain: "cicd-banking.firebaseapp.com",
+  databaseURL: "https://cicd-banking.firebaseio.com",
+  projectId: "cicd-banking",
+  storageBucket: "cicd-banking.appspot.com",
+  messagingSenderId: "356134557348",
+  appId: "1:356134557348:web:5660035e646f441fbcb831",
+  measurementId: "G-3QVFVM9S37"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 Vue.prototype.$Chartist = Chartist;
 

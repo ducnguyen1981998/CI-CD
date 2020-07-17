@@ -93,7 +93,7 @@
 
                   <!-- Đăng kí btt -->
                   <md-button to="/register" class="md-primary md-success">
-                    Register
+                    Đăng kí
                   </md-button>
                 </div>
                 <div slot="footer">
@@ -119,7 +119,7 @@
                   slot="forget"
                   class="md-simple md-transparent"
                 >
-                  <p class="forget">Fortget password?</p>
+                  <p class="forget">Quên mật khẩu?</p>
                 </md-button>
               </login-card>
             </form>
