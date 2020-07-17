@@ -27,3 +27,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - uses: w9jds/firebase-action@master
+      with:
+         args: deploy --only hosting
+      env:
+         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
