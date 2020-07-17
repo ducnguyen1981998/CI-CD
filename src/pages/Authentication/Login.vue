@@ -93,7 +93,7 @@
 
                   <!-- Đăng kí btt -->
                   <md-button to="/register" class="md-primary md-success">
-                    Đăng kiiiiiii
+                    Đăng kí
                   </md-button>
                 </div>
                 <div slot="footer">
